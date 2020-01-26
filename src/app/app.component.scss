@@ -1,0 +1,189 @@
+.p5{
+    padding: 5px;
+}
+
+.p10{
+    padding: 10px;
+}
+
+.p15{
+    padding: 15px;
+}
+
+.p20{
+    padding: 20px;
+}
+
+.p-l-10{
+    padding-left: 10px;
+}
+
+.fw100{
+    font-weight: 100;
+}
+
+.menu-holder{
+    background: #ffffff;
+    box-shadow:10px 3px 10px 1px #a9a3a3;
+    color: #a9a3a3;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+
+.m-t-5{
+    margin-top: 5px;
+}
+
+.m-t-10{
+    margin-top: 10px;
+}
+
+.m-t-15{
+    margin-top: 15px;
+}
+
+.m-t-20{
+    margin-top: 20px;
+}
+
+.sub-holder{
+    background: #ffffff;
+    font-weight: 300;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px 1px #a9a3a3;
+}
+
+.blue-bg{
+    background: #0392bf;
+}
+
+.search{
+    color: #ffffff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;   
+}
+
+.search-icon{
+    font-size: 25px;
+}
+
+.down-arrow{
+    font-size: 15px;
+    position: relative;
+    top: 0.2em;
+}
+
+
+.fund-holder{
+    background: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0px 2px 8px 1px #ccc;
+    margin-bottom: 20px;
+}
+
+.fit-well{
+    width: 100%;
+}
+
+.content{
+    position: relative;
+    top: 70px;
+    max-height: 80vh;
+    overflow: auto;
+}
+
+.performance-panel{
+    .mat-expansion-panel-header{
+        height: 2em !important;
+        padding: 0px !important;
+
+        .mat-expansion-indicator{
+            display: none;
+        }
+
+        .mat-expansion-panel-header-title{
+            margin-right: 0px;
+        }
+    }
+    .mat-expansion-panel{
+        background: transparent;
+        box-shadow: none;
+        border-radius:0px !important;
+    }
+}
+
+.full-wide{
+    width: 100%;
+    line-height: 3;
+}
+
+
+
+.white-text{
+    color: #fff;
+}
+
+.l2{
+    line-height: 2;
+}
+
+.infotoggle{
+    background: #e9edf1c2;
+    cursor: pointer;
+}
+
+.options-footer{
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    bottom: 0px;
+    box-shadow:0px 2px 5px 4px #a9a3a3
+}
+
+.icon-img{
+    width:30px;
+}
+
+.menu-title{
+    color: #807e7e;
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+
+
+
+.font10{
+    font-size: 10px;
+}
+
+.font11{
+    font-size: 11px;
+}
+
+.font12{
+    font-size: 12px;
+}
+
+.font13{
+    font-size: 13px;
+}
+
+.font15{
+    font-size: 15px;
+}
+
+.font20{
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+
+.link{
+    cursor: pointer;
+}

@@ -5,11 +5,14 @@ import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatIconModule,MatExpansionModule, MatTooltipModule } from '@angular/material';
+import { FundInfoComponent } from './fund-info/fund-info.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FundInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -17,7 +20,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
-
+    MatIconModule,
+    MatExpansionModule,
+    HttpClientModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

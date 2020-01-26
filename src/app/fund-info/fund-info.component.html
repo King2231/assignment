@@ -1,0 +1,65 @@
+<div fxLayout="column" class="fund-holder">
+    <div fxLayout="row wrap" class="p10">
+        <div fxFlex.gt-sm="5" fxFlex="10">
+            <img src="./../../assets/images/dummy2.jpg" alt="fund1" class="fit-well">
+        </div>
+        <div fxFlex.gt-sm="75" fxLayout="column" fxFlex="70" >
+            <div class="p-l-10 fw100 fundname" ngClass.gt-sm="font20" ngClass.lt-sm="font13"  [matTooltip]="fund.name">
+                {{fund.name}}
+            </div>
+            <div class="p-l-10 m-t-5 fw100 fundtype font10" ngClass.lt-sm="font10" ngClass.gt-sm="font15">
+                {{fund.FundType}}
+            </div>
+        </div>
+        <div fxFlex="20" fxLayoutAlign="end end" class="more">
+            <mat-icon>keyboard_arrow_right</mat-icon>
+        </div>
+    </div>
+    <div class="performance-holder">
+        <div *ngIf="showInfo" fxLayout="row wrap" class="fund-info p10">
+            <div fxFlex="15" fxLayoutAlign="end center">
+                <img src="./../../assets/images/growth.webp" alt="Growth" style="width:60px;">
+            </div>
+            <div fxLayout="column" fxFlex="30" fxLayoutAlign="start center">
+                <div class="info-title">
+                    Average 3Y Rolling Return
+                </div>
+                <div class="percentage">
+                    {{fund.threeyearReturn |number:'1.2-2'}}%
+                </div>
+            </div>
+            <div fxLayout="column" fxFlex="30" fxLayoutAlign="start center">
+                <div class="info-title">
+                    3Y Standard Deviation
+                </div>
+                <div class="percentage">
+                    {{fund.threeyearReturn!=""?((fund.threeyearReturn|number:'1.2-2')+'%'):'NA'}}
+                </div>
+            </div>
+            <div fxLayout="column" fxFlex="25" fxLayoutAlign="start center">
+                <div class="info-title">
+                    1Y <br>Return
+                </div>
+                <div class="percentage">
+                    {{fund.oneYrReturn!=""?((fund.oneYrReturn|number:'1.2-2')+'%'):'NA'}}
+                </div>
+            </div>
+        </div>
+        <div fxLayout="row wrap" class="full-wide infotoggle" (click)="showInfo=!showInfo">
+            <div fxFlex="50" fxLayoutAlign="center center" ngClass.gt-sm="font15" ngClass.lt-sm="font10" style="color: #797474;">
+                {{showInfo==false?'Show':'Hide'}} Performace Details
+                <mat-icon style="font-size: 15px;line-height: 1.6;">
+                    {{showInfo==false?'expand_more':'expand_less'}}
+                </mat-icon>
+            </div>
+            <div fxFlex="50" fxLayout="row wrap" class="blue-bg white-text" ngClass.gt-sm="font15" ngClass.lt-sm="font10">
+                <div fxFlex="20" fxLayoutAlign="center center">
+                    <mat-icon class="cart-add">add_shopping_cart</mat-icon>
+                </div>
+                <div fxFlex="80" fxLayoutAlign="center center" style="padding-right: 3em;">
+                    Invest now
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

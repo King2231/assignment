@@ -1,0 +1,37 @@
+.cart-add{
+    font-size: 20px;
+    position: relative;
+    top: 0.1em;
+}
+
+.fundname{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    // font-size: 13px;
+}
+
+.fundtype{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #797474;
+}
+
+.more{
+    color: #797474;
+}
+
+.info-title{
+    font-size: 11px;
+    text-align: center;
+    color: rgb(121, 116, 116);
+    padding: 0px 5px;
+}
+
+.percentage{
+    text-align: center;
+    color: #797474;
+    font-size: 14px;
+    margin-top: 5px;
+}

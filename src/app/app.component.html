@@ -1,11 +1,59 @@
-<div fxLayout="row wrap">
-    <div fxFlex.xs="10">
-
+<div fxLayout="row wrap" class="p20 menu-holder">
+    <div fxFlex="10">
+        <mat-icon>format_align_left</mat-icon>
     </div>
-    <div fxFlex.xs="80">
+    <div fxFlex="80" fxLayoutAlign="center center" style="font-weight: 500;font-size: 20px;">
         Invest
     </div>
-    <div fxFlex.xs="10">
+    <div fxFlex="10" fxLayoutAlign="end center">
+        <mat-icon>shopping_cart</mat-icon>
+    </div>
+</div>
 
+<div class="content">
+    <div class="p15 submenu">
+        <div fxLayout="row wrap" class="sub-holder">
+            <div fxFlex="85" fxLayout="row wrap" class="p10">
+                <div fxFlex="35" fxLayoutAlign="center center" class="l2" ngClass.lt-sm="font13" ngClass.gt-sm="font20">
+                    All Funds <mat-icon class="down-arrow">expand_more</mat-icon>
+                </div>
+                <div fxFlex="30" fxLayoutAlign="center center" class="l2" ngClass.lt-sm="font13" ngClass.gt-sm="font20">
+                    Screener
+                </div>
+                <div fxFlex="35" fxLayoutAlign="center center" class="l2" ngClass.lt-sm="font13" ngClass.gt-sm="font20">
+                    Filter by AMC
+                </div>
+            </div>
+            <div fxFlex="15" fxLayoutAlign="center center" class="blue-bg search">
+                <mat-icon class="search-icon">search</mat-icon>
+            </div>
+        </div>
+    </div>
+
+    <div class="p15">
+        <app-fund-info *ngFor="let fund of funds" [fund]="fund"></app-fund-info>
+    </div>
+</div>
+
+
+<div fxLayout="row wrap" class="options-footer p5">
+    <div fxFlex="25" fxLayout="column" fxLayoutAlign="center center" class="link">
+        <img src="./../assets/images/dark_home.png" alt="Invest" class="icon-img">
+        <span class="menu-title">Home</span>
+    </div>
+
+    <div fxFlex="25" fxLayout="column" fxLayoutAlign="center center" class="link">
+        <img src="./../assets/images/dark_money.png" alt="Invest" class="icon-img">
+        <span class="menu-title">Invest</span>
+    </div>
+
+    <div fxFlex="25" fxLayout="column" fxLayoutAlign="center center" class="link">
+        <img src="./../assets/images/dark_case.png" alt="Invest" class="icon-img">
+        <span class="menu-title">Portfolio</span>
+    </div>
+
+    <div fxFlex="25" fxLayout="column" fxLayoutAlign="center center" class="link">
+        <img src="./../assets/images/dark_user.png" alt="Invest" class="icon-img">
+        <span class="menu-title">Profile</span>
     </div>
 </div>
